@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Tests4GoPro]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Romania(failed)">
+    <parameter name="Country" value="Romania"/>
+    <classes>
+      <class name="GoProTests.RoTest">
+        <methods>
+          <include name="remove_1st_camera"/>
+          <include name="opensite"/>
+          <include name="addcamera"/>
+          <include name="negative_testing"/>
+          <include name="remove_2nd_camera"/>
+        </methods>
+      </class> <!-- GoProTests.RoTest -->
+    </classes>
+  </test> <!-- Romania(failed) -->
+</suite> <!-- Failed suite [Tests4GoPro] -->
